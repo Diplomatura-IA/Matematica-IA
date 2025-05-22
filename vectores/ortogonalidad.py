@@ -13,13 +13,14 @@ def son_ortogonales(u, v, t):
     """
     # Calculo el producto punto
     producto_punto = np.dot(u, v)
+    print(f"Producto punto = {producto_punto}")
     # Verifico si el producto escalar es cercano a cero dentro del margen de tolerancia
     result = np.abs(producto_punto) < t
     return result
 
 
 tolerancia = 1e-10
-vector_u = [1, 0]
-vector_v = [0, 1]
+vector_u = [1, 2, -1]
+vector_v = [2, -1, 1]
 
 print(son_ortogonales(vector_u, vector_v, tolerancia))
