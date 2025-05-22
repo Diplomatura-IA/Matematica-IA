@@ -11,7 +11,7 @@ def desplazar_cuadrilatero(esquinas):
     desplazamiento_y = 5  # Mueve hacia arriba
     # Comprención de lista
     nuevas_esquinas = [(x + desplazamiento_x, y + desplazamiento_y) for x, y in esquinas]
-    print(nuevas_esquinas)
+    # print(nuevas_esquinas)
     return nuevas_esquinas
 
 
@@ -45,8 +45,8 @@ def plotear_cuadrilatero(original, desplazado):
 
 # Definir cuadrilátero original
 cuadrilatero = [(2, 3), (8, 3), (8, 6), (2, 6)]
-print(cuadrilatero)
+# print(cuadrilatero)
 nuevas_coordenadas = desplazar_cuadrilatero(cuadrilatero)
 
 # Plotear
-plotear_cuadrilatero(cuadrilatero, nuevas_coordenadas)
+# plotear_cuadrilatero(cuadrilatero, nuevas_coordenadas)
