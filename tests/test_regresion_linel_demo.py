@@ -4,7 +4,7 @@ import pandas as pd
 from io import StringIO
 
 # Importamos la función a probar
-from regresion_lineal_demo import regresion_lineal_simple
+from vectores.regresion_lineal_demo import regresion_lineal_simple
 
 
 class TestRegresionLineal(unittest.TestCase):
