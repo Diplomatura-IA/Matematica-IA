@@ -9,7 +9,7 @@ pd.set_option('display.colheader_justify', 'center')  # Mejor alineación
 data = pd.read_csv("Life Expectancy Data.csv")
 # print(data.shape)
 # print(data.head())
-# output_file = "data_filtered.txt"
+# output_file = "data_filtered_mypersonality.txt"
 # data.to_csv(output_file, sep="\t", index=False)
 # print(f"Datos guardados en {output_file}")
 
@@ -17,7 +17,7 @@ data2=data.query("Year == 2014")
 # data2=data.query("Country == 'Argentina'")
 data2=data2.query("GDP < 80000")
 data2=data2.query("`percentage expenditure` != 0")
-# data2 = data2.loc[:,["Country","percentage expenditure","GDP"]]
+data2 = data2.loc[:,["Country","percentage expenditure","GDP"]]
 print(data2.shape)
 print(data2.head())
 

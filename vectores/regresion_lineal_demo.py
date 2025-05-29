@@ -1,5 +1,5 @@
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 
 
@@ -46,6 +46,7 @@ def regresion_lineal_simple(csv_file, query, col_x, col_y):
 
     return b1, b0, y_pred, data_frame
 
+
 def graficar_regresion(df, col_x, col_y, y_pred):
     """
     Grafica los datos filtrados y la línea de regresión lineal.
@@ -72,6 +73,7 @@ def graficar_regresion(df, col_x, col_y, y_pred):
     plt.legend()
     plt.grid()
     plt.show()
+
 
 # Ejemplo del Colab (buscar otros ejemplos)
 csv_path = "Life Expectancy Data.csv"
